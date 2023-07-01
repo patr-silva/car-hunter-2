@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import SearchBar from "@/components/SearchBar";
 import CustomFilter from "@/components/CustomFilter";
 import CarCard from "@/components/CarCard";
+import ShowMore from "@/components/ShowMore";
 
 import { fetchCars } from "@/utils";
 import { fuels, yearsOfProduction } from "@/constants";
@@ -41,6 +42,10 @@ export default async function Home({ searchParams }: HomeProps) {
                 <CarCard car={car} />
               ))}
             </div>
+            <ShowMore
+              pageNumber={(searchParams.limit || 10) / 10}
+              isNext={(searchParams.limit || 10) > allCars.length}
+            />
           </section>
         ) : (
           <div className='home__error-container'>
