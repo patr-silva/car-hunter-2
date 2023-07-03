@@ -21,7 +21,7 @@ const ShowMore = ({ pageNumber, isNext }: ShowMoreProps) => {
         <CustomButton
           title='Show more'
           btnType='button'
-          containerStyles='bg-primary-blue rounded-full text-white'
+          containerStyles='bg-[#e63d3d] rounded-full text-white'
           onClickHandler={handleNavigation}
         />
       )}

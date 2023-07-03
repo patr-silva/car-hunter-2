@@ -13,16 +13,12 @@ const Navbar = () => {
           <Image
             src='/logo.svg'
             alt='logo'
-            width={118}
+            width={50}
             height={18}
             className='object-contain'
           />
+          <h1 className="font-sans text-2xl font-semibold ml-5">Car Hunter</h1>
         </Link>
-        <CustomButton
-          title='Sign in'
-          btnType='button'
-          containerStyles='text-primary-blue rounded-full bg-white min-w-[130px]'
-        />
       </nav>
     </header>
   );
